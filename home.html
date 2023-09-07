@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;700&family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Space Tourism</title>
+</head>
+<body onload="setUpHome()";>
+
+    <!-- wrapper container -->
+    <section id="wrap">
+
+        <!-- logo and nav menu container -->
+        <div class="flex justify-between container max-w-full h-[96px] lg:h-[136px] lg:pt-[40px] ">
+            <!-- logo container -->
+            <div class="pl-[24px] py-[28px] md:pl-[39px] py-[24px] lg:pl-[55px]">
+                <a href="home.html">
+                    <img src="../images/shared/logo.svg" alt="" class="w-[40px] h-[40px] md:h-[48px] md:w-[48px]">
+                </a>
+            </div>
+
+            <!-- hamburger button -->
+            <div class="md:hidden">
+                <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focusoutline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+
+            <!-- wrapper nav menu -->
+            <div class="relative md:w-[450px] md:h-[96px] lg:w-[830px] xl:w-[1273px]">
+                <!-- line -->
+                <div class="absolute xl:w-[473px] xl:h-[1px] xl:bg-white xl:mt-[50px] xl:opacity-30"></div>
+                <!-- nav menu container -->
+                <div class="absolute md:w-[450px] md:h-[96px] lg:w-[830px] xl:ml-[443px]">
+                    <div class="absolute md:w-[450px] md:h-[96px] md:opacity-5 md:bg-white lg:w-[830px]"></div>
+                    <!-- nav menu lists -->
+                    <div class="menu relative md:mt-[39px] md:w-[356px] md:h-[18px] md:mx-auto md:flex md:justify-between md:tracking-widest lg:w-[542px] lg:h-[19px]">
+
+                        <!-- desktop & desktop menu list -->
+                        <div class="desktop md:w-[356px] md:flex md:justify-between md:font-Barlow md:font-normal md:text-[14px] md:text-white md:tracking-widest lg:w-[542px] lg:flex lg:justify-between lg:font-Barlow lg:font-normal lg:text-[16px] lg:text-white">
+                            <div class="groups">
+                                <a href="home.html" class="navigate-home">
+                                    <span class="pre font-bold">00</span>
+                                    HOME
+                                </a>
+                            </div>
+
+                            <div class="groups">
+                                <a href="destination.html">
+                                    <span class="pre font-bold">01</span>
+                                    DESTINATION
+                                </a>
+                            </div>
+
+                            <div class="groups">
+                                <a href="crew.html">
+                                    <span class="pre font-bold">02</span>
+                                    CREW
+                                </a>
+                            </div>
+
+                            <div class="groups">
+                                <a href="technology.html">
+                                    <span class="pre font-bold">03</span>
+                                    TECHNOLOGY
+                                </a>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- content main container -->
+        <div class="container flex flex-col justify-between max-w-[1110px] h-[603px] mx-auto md:h-[838px] lg:h-[764px]">
+            <!-- content container -->
+            <div class="flex flex-col justify-between my-[48px] mx-[24px] h-[507px] md:my-[106px] md:mx-[159px] md:h-[732px] lg:flex-row lg:mx-0 lg:mt-[251px] lg:h-[382px]">
+                <!-- top content container -->
+                <div class="h-[276px] flex flex-col justify-between lg:w-[450px]">
+                    <!-- content 1 -->
+                    <div class="uppercase tracking-widest text-center text-lightBlue font-Barlow text-[16px] md:text-[20px] lg:text-[28px] lg:text-left">
+                        SO, YOU WANT TO TRAVEL TO
+                    </div>
+                    <!-- content 2 -->
+                    <div class="uppercase text-center text-white font-Bellefair text-[80px] md:text-[150px] lg:text-left">
+                        Space
+                    </div>
+                    <!-- content 3 -->
+                    <div class="text-center text-[15px] text-lightBlue font-Barlow tracking-wide md:text-[16px] lg:text-[18px] lg:text-left">
+                        Let’s face it; if you want to go to space, you might as well genuinely 
+                        go to outer space and not hover kind of on the edge of it. Well sit back, 
+                        and relax because we’ll give you a truly out of this world experience!
+                    </div>
+                </div>
+                <!-- Call to action container -->
+                <div class="w-[150px] h-[150px] mx-auto bg-white rounded-full md:w-[242px] md:h-[242px] lg:w-[274px] lg:h-[274px] lg:mt-[105px] lg:mx-0">
+                    <a href="destination.html" class="absolute font-Bellefair text-[20px] ml-[30px] mt-[65px] md:text-[32px] md:ml-[46px] md:mt-[103px] lg:ml-[62px] lg:mt-[119px]">EXPLORE</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- mobile-menu -->
+        <div id="menu" class="absolute top-0 bottom-0 right-0 hidden flex-col self-end w-[70%] min-h-screen py-1 pt-[145px] pl-12 space-y-10 text-[16px] text-white uppercase font-Barlow backdrop-blur-xl">
+            <div class="group tracking-widest flex justify-between">
+                <a href="home.html" id="home3">
+                    <span class="font-bold">00</span>
+                    HOME
+                </a>
+                <div class="group-hover:border-b group-hover:border-[3px] group-hover:border-white group-hover:h-[20px]"></div>
+            </div>
+
+            <div class="group tracking-widest flex justify-between">
+                <a href="destination.html" id="destination3">
+                    <span class="font-bold">01</span>
+                    DESTINATION
+                </a>
+                <div class="group-hover:border-b group-hover:border-[3px] group-hover:border-white group-hover:h-[20px]"></div>
+            </div>
+
+            <div class="group tracking-widest flex justify-between">
+                <a href="crew.html">
+                    <span class="font-bold">02</span>
+                    CREW
+                </a>
+                <div class="group-hover:border-b group-hover:border-[3px] group-hover:border-white group-hover:h-[20px]"></div>
+            </div>
+
+            <div class="group tracking-widest flex justify-between">
+                <a href="technology.html">
+                    <span class="font-bold">03</span>
+                    TECHNOLOGY
+                </a>
+                <div class="group-hover:border-b group-hover:border-[3px] group-hover:border-white group-hover:h-[20px]"></div>
+            </div>
+
+        </div>
+    </section> 
+
+</body>
+</html>
